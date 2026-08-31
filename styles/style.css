@@ -84,6 +84,38 @@ input:focus {
     outline: none;
 }
 
+/* tabela */
+/* Tabela */
+table.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+table.tabela th, table.tabela td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table.tabela th {
+    background: var(--azul-caixa);
+    color: white;
+}
+
+table.tabela tbody tr:nth-child(even) {
+    background: var(--cinza-claro);
+}
+
+table.tabela tbody tr:nth-child(odd) {
+    background: white;
+}
+
+table.tabela tbody tr:hover {
+    background: #e6f0ff; /* leve destaque ao passar o mouse */
+}
+
 /* Botão */
 button {
     background: var(--laranja-caixa);
@@ -108,3 +140,5 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+
+

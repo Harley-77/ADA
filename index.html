@@ -22,16 +22,11 @@
         <section id="titulo">
             <h1>Gestão de Clientes</h1>
         </section>
-        <section id="tabela">
-            <div>
-                <h2>Clientes Cadastrados</h2>
-            </div>
-        </section>
         <section id="formularios">
             <div id="criar">
                 <h2>Cadastrar Cliente</h2>
             </div>
-            <form id="form">
+            <form id="formulario">
                 <label for="nome">Nome do Cliente</label>
                 <input type="text" id="nome" placeholder="Nome" required>
                 <label for="cpf">CPF do Cliente</label>
@@ -41,6 +36,23 @@
                 <button type="submit" id="btn-adiciona">Cadastrar Cliente</button>
 
             </form>
+        <section id="tabela">
+            <div>
+                <h2>Clientes Cadastrados</h2>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>E-Mail</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-clientes"></tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
+        </section>
             <div id="editar">
 
             </div>
