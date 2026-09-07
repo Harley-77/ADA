@@ -6,10 +6,16 @@
     <meta name="description" content="Sistema de gestão bancária">
     <meta name="keywords" content="cadastro,bancário,sistema">
     <title>Projeto - Sistema Bancário</title>
-    <script defer src="js/api.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="js/ui.js"></script>
-    <script defer src="js/validacao.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script defer src="js/main.js"></script>      <!-- Seletores do DOM -->
+    <script defer src="js/validacao.js"></script> <!-- Validações dos campos -->
+    <script defer src="js/api.js"></script>       <!-- Funções de CRUD -->
+    <script defer src="js/ui.js"></script>        <!-- Lógica da interface -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -34,7 +40,6 @@
                 <label for="email">E-mail de contato</label>
                 <input type="email" id="email" placeholder="email" required>
                 <button type="submit" id="btn-adiciona">Cadastrar Cliente</button>
-
             </form>
         <section id="tabela">
             <div>
@@ -42,10 +47,10 @@
                 <table class="tabela">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Nome</th>
                             <th>CPF</th>
                             <th>E-Mail</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody id="tabela-clientes"></tbody>
